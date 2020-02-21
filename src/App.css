@@ -1,38 +1,325 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Poppins", sans-serif;
+  color: rgb(41, 41, 41);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navber */
+.Navbar {
+  background-color: rgb(86, 0, 126);
+  opacity: 0.9;
+  transition: all 1.6s;
+  -webkit-transition: all 1.6s;
+  -moz-transition: 1.6s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navWidth {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Navbar:hover {
+  opacity: 1;
+  background-color: #dc3545;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavText {
+  transition: all 1.6s;
+  -webkit-transition: all 1.6s;
+  -moz-transition: 1.6s;
+  color: rgb(255, 255, 255) !important;
+  text-decoration-line: none !important;
+}
+
+.NavText i {
+  transition: all 1.6s;
+  -webkit-transition: all 1.6s;
+  -moz-transition: 1.6s;
+  color: rgb(255, 255, 255) !important;
+}
+
+.NavText:hover {
+  color: rgb(86, 0, 126) !important;
+  text-decoration-line: none !important;
+}
+
+.NavText:hover > i {
+  color: rgb(86, 0, 126) !important;
+}
+
+/* ToolTip */
+.myToolTip .fa-github-square {
+  color: rgb(255, 255, 255) !important;
+}
+.myToolTip > .tooltip-inner {
+  background-color: rgb(86, 0, 126);
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid rgb(86, 0, 126);
+}
+/* Tooltip Arrow */
+.myToolTip > .bs-tooltip-auto[x-placement^="bottom"] span.arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom: 5px solid rgb(86, 0, 126) !important;
+}
+/* Spinner */
+.spinner {
+  position: absolute;
+  width: 240px;
+  height: 160px;
+  left: 50%;
+  margin-left: -120px;
+  top: 50%;
+  margin-top: -80px;
+}
+/* Search Component */
+.searchHeader {
+  margin-top: 20px !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.searchInput:focus {
+  border-color: rgba(220, 53, 70, 0.8) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(220, 53, 70, 0.6) !important;
+  outline: 0 none !important;
+}
+
+.searchButtons {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.searchForm {
+  margin: 20px 0 !important;
+}
+
+/* UsersComponent */
+.userComp {
+  width: 100%;
+  text-align: center;
+  margin: 8px auto;
+  border: 1px solid rgba(86, 0, 126, 0.123);
+  border-radius: 3px;
+  padding: 5px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: 1s;
+}
+.userComp:hover {
+  -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(86, 0, 126);
+}
+.userComp:hover > .userName {
+  color: #eee;
+}
+
+.userComp:hover > .userImage {
+  -webkit-box-shadow: 0px 6px 14px 0px rgba(255, 0, 98, 0.75);
+  -moz-box-shadow: 0px 6px 14px 0px rgba(255, 0, 98, 0.75);
+  box-shadow: 0px 6px 14px 0px rgba(255, 0, 98, 0.75);
+}
+
+.userImage {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: 1s;
+}
+.userName {
+  margin-top: 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: 1s;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.userPtofileBtn {
+  width: 60%;
+  margin: 10px 0;
+}
+
+button:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+/* User Page */
+.hiredContainer {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+  padding: 0;
+}
+
+.hiredComp {
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.hiredText {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fa-times-circle-o {
+  padding: 0;
+  margin: 0;
+  color: #c03232;
+}
+.fa-check-circle-o {
+  padding: 0;
+  margin: 0;
+  color: #289c4f;
+}
+.userInfoContainer {
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+}
+
+.leftUserInfo {
+  text-align: center;
+  padding: 20px 0;
+}
+.rightUserInfo {
+  text-align: left;
+  padding: 20px 0;
+  position: relative;
+  width: 80%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.userAvatar {
+  width: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+  -moz-box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+  box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+}
+
+.uName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.otherUserInfo {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.otherUserInfoRight {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+.bioTitle {
+  font-weight: 700;
+  margin-left: 5px;
+}
+.fa-external-link-alt {
+  color: rgb(41, 41, 41);
+  font-size: 0.7rem;
+}
+.fa-external-link-alt:hover {
+  text-decoration: none;
+  color: rgb(41, 41, 41) !important;
+}
+
+.userButton {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.githubBtns {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.fa-github {
+  color: #eee !important;
+}
+
+.reposCon {
+  text-align: center;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.reposText {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.reposContainer {
+  position: relative;
+  text-align: center;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.repoComp {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 16px;
+}
+
+.repoComp:hover{
+  -webkit-box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+  -moz-box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+  box-shadow: 0px 6px 14px 0px rgb(112, 112, 112);
+}
+
+.repoName{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.repoDescription{
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.repoOthers{
+  position: relative;
+  font-size: .7rem;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.repoRight{
+  float: right;
 }
