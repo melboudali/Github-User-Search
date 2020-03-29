@@ -36,7 +36,7 @@ const Search = () => {
 
   return (
     <Fragment>
-      <h4 className="searchHeader">GitHub User Search</h4>
+      <h4 className="searchHeader">Search:</h4>
       <Alert />
       <Form className="searchForm" onSubmit={onSubmit}>
         <Form.Group>
