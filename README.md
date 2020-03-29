@@ -1,3 +1,16 @@
+**Github User Search** is a simple react app using: react, react-dom, react-bootstrap, react-router-bootstrap, axios and Github Api.
+ 
+**NB:** Creat a local environment variable file "**.env.local**" and use your Github Api ClientID and SecretID like this:
+
+**REACT_APP_GITHUB_CLIENT_ID**='YOUR-CLIENT-ID-HERE'
+**REACT_APP_GITHUB_CLIENT_SECRET**='YOUR-SECRET-ID-HERE'
+
+Github ClientID/SecretID : [link](https://github.com/settings/applications/new)
+
+Ex:
+
+![Alt GUS](https://i.imgur.com/wZVtjm5.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
