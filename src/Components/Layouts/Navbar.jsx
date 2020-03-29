@@ -4,13 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import { LinkContainer } from "react-router-bootstrap";
 //Using LinkContainer instead of LINK (i had a problem with Nav.link bootstrap)
+import { LinkContainer } from "react-router-bootstrap";
 
 const NavbarComp = () => {
 
   const changeTitle = () => {
-    document.title = "Github Search";
+    document.title = "Github User Search";
   };
 
   return (
@@ -22,12 +22,12 @@ const NavbarComp = () => {
             delay={{ show: 200, hide: 200 }}
             overlay={
               <Tooltip className="myToolTip">
-                <i className="fab fa-github-square" /> Github Search
+                <i className="fab fa-github-square" /> Github User Search
               </Tooltip>
             }
           >
             <Navbar.Brand className="NavText" href="/">
-              <i className="fab fa-github-square" /> Github Search
+              <i className="fab fa-github-square" /> Github User Search
             </Navbar.Brand>
           </OverlayTrigger>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
