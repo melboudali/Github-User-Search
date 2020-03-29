@@ -2,14 +2,18 @@
  
 **NB:** Creat a local environment variable file "**.env.local**" and use your Github Api ClientID and SecretID like this:
 
-**REACT_APP_GITHUB_CLIENT_ID**='YOUR-CLIENT-ID-HERE'
+**REACT_APP_GITHUB_CLIENT_ID**='YOUR-CLIENT-ID-HERE'<br/>
 **REACT_APP_GITHUB_CLIENT_SECRET**='YOUR-SECRET-ID-HERE'
 
 Github ClientID/SecretID : [link](https://github.com/settings/applications/new)
 
-Ex:
-
+Ex:<br/>
+#1<br/>
+![Alt GUS](https://i.imgur.com/LcxDwTO.png)
+#2<br/>
 ![Alt GUS](https://i.imgur.com/wZVtjm5.png)
+#3<br/>
+![Alt GUS](https://i.imgur.com/XilJnWR.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -17,6 +21,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+then
 ### `npm start`
 
 Runs the app in the development mode.<br />
