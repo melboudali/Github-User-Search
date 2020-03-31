@@ -109,16 +109,21 @@
   border: 1px solid rgba(86, 0, 126, 0.123);
   border-radius: 3px;
   padding: 5px;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: 1s;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(30, 30, 30, 0.7);
+  flex: 1;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  overflow: hidden;
 }
 
 .userComp:hover {
-  -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(30, 30, 30, 0.7);
+  -moz-box-shadow: 0 10px 20px 0 rgba(30, 30, 30, 0.7);
   background-color: rgb(86, 0, 126);
+  box-shadow: 0 10px 20px 0 rgba(30, 30, 30, 0.7);
+  transform: translateY(-5px);
 }
 
 .userComp:hover > .userName {
