@@ -7,7 +7,7 @@
 
 Github ClientID/SecretID : [link](https://github.com/settings/applications/new)
 
-:rocket: Netlify Demo: https://githubsearch-react.netlify.com
+:rocket: Netlify Demo: https://githubsearch-react.netlify.com<br/>
 :zap: Heroku Demo: https://githubsearch-react.herokuapp.com/
 
 Ex:<br/>
