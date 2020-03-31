@@ -7,6 +7,8 @@
 
 Github ClientID/SecretID : [link](https://github.com/settings/applications/new)
 
+Demo: https://githubsearch-react.netlify.com
+
 Ex:<br/>
 #1<br/>
 ![Alt GUS](https://i.imgur.com/LcxDwTO.png)
