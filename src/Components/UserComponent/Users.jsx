@@ -5,10 +5,9 @@ import GithubContext from "../Context/GitHub/GithubContext";
 import Spinner from "../Layouts/Spinner";
 
 const Users = () => {
-
   const githubState = useContext(GithubContext);
   const { users, ResultCount, loading } = githubState;
-  
+
   return (
     <Fragment>
       {ResultCount > 30 && <h6>{ResultCount} users found.</h6>}

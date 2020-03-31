@@ -1,7 +1,6 @@
 import React from "react";
 
 const ReposComp = props => {
-
   const {
     name,
     html_url,
@@ -20,9 +19,9 @@ const ReposComp = props => {
     <div className="repoComp">
       <h1 className="repoName">
         {` ${name} `}
-          <a href={html_url} target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-external-link-alt" />
-          </a>
+        <a href={html_url} target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-external-link-alt" />
+        </a>
       </h1>
       {description && <h2 className="repoDescription">{description}</h2>}
       {watchers_count > 0 && (

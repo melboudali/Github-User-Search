@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 
 const UsersItems = ({ user: { login, avatar_url } }) => {
-  
   const changeTitle = () => {
     document.title = login;
   };

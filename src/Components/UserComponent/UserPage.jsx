@@ -9,7 +9,6 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 const UserPage = props => {
-  
   const githubState = useContext(GithubContext);
   const { match } = props;
   const {
